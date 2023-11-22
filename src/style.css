@@ -40,3 +40,18 @@
     color: black;
     padding: 5px;
 }
+
+html{
+    font-size: 62.5%;
+}
+
+/* Below 1350px */
+
+@media (max-width: 84em){
+    .button{
+        position: absolute;
+        top: 10%;
+        left: 20%;
+        transform: translate(-top,-left);
+    }
+}

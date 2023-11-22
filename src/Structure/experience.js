@@ -5,7 +5,7 @@ import { FormatItalic } from "@material-ui/icons";
 export default function Experience({year,company,topic,text}){
 
     return(
-        <Experiencestyle>
+        <Experiencestyle className="expppp">
                 <div className="year">
                     <p>{year}</p>
                 </div>
@@ -14,7 +14,7 @@ export default function Experience({year,company,topic,text}){
                     <p><span className="purptext">Company: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{company}</span></p>
                     <p className="desig">Designation:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{topic}</p>
                     <div className="textparts">
-                    <p>Work:</p>
+                    <p className="work">Work:</p>
                     <p className="display-linebreak">{text}</p>
                     </div>
                     <br />
@@ -67,5 +67,15 @@ white-space: pre-line;
     width:80%;
 }
 
+@media screen and (max-width:800px){
+    .purptext,.desig,.work,.display-linebreak,.year{
+       font-size:clamp(1px,2.5vw,100px);
+    }
 
+}
+
+@media screen and (max-width:600px){
+   
+    flex-direction: column;
+}
 `;

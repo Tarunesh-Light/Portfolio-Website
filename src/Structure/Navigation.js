@@ -33,7 +33,7 @@ export default function Navigation(){
             </li>
         </ul>
         <footer className="copyright">
-                <p>&nbsp;&copy; Tarunesh Thangaraju | 2023 </p>
+                <p className="para">&nbsp;&copy; Tarunesh Thangaraju | 2023 </p>
         </footer>
     </Navigationstyled>
     </>)
@@ -105,6 +105,10 @@ a{
 
 .copyright{
     color: grey;
+}
+
+.para{
+    font-size: 13px;
 }
 
 `;

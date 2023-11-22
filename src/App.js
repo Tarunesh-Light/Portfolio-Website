@@ -6,13 +6,17 @@ import Projects from './Structure/Projects.js';
 import Contact from './Structure/Contact.js';
 import Certifications from './Structure/Certifications.js';
 import { Route,Routes } from "react-router-dom";
+import { useState } from "react";
+import { useEffect } from "react";
+import Sidebar from "./Structure/Sidebar.js";
 
 //Export App function by default
 
 export default function App(){
-  
+
     return (<>
     <AppStyled>
+
     <Routes>
         <Route path="/home" element={<Header></Header>}>
         </Route>

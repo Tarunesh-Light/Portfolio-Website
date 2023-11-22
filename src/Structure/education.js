@@ -13,7 +13,7 @@ export default function Experience({year,company,topic,text}){
                 <div className="textt">
                     <p className="bachelor"><span className="purptext">College: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{company}</span></p>
                     <div className="textparts">
-                    <span>GRADUATE</span>
+                    <span className="graduate">GRADUATE</span>
                     <p className="display-linebreak">{text}</p>
                     </div>              
                 </div>
@@ -51,6 +51,7 @@ white-space: pre-line;
 
 .bachelor{
     margin-bottom: 4px;
+    margin-top: 6px;
 }
 
 .year{
@@ -68,5 +69,17 @@ white-space: pre-line;
 .textt{
     width:80%;
 }
+
+@media screen and (max-width:800px){
+    .graduate,.bachelor,.display-linebreak,.year{
+       font-size:clamp(1px,2.5vw,100px);
+    }
+}
+
+@media screen and (max-width:600px){
+   
+   flex-direction: column;
+}
+
 
 `;

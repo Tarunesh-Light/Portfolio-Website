@@ -22,6 +22,14 @@ body{
     font-family: Bebas Neue,sans-serif
 }
 
+
+.navigationistoggled{
+    transition: all .4s ease-in-out;
+    transform: translateX(0);   
+    z-index: 30;    
+}
+
+
 `;
 
 export default GlobalStyle;
